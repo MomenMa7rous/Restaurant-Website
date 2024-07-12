@@ -74,7 +74,7 @@
           <i class="fa-solid fa-cart-shopping text-xl"></i>
         </a>
       </div>
-      <form class="flex-1 flex items-center justify-center gap-[1px] max-w-[600px]">
+      <form class="hidden sm:flex flex-1 items-center justify-center gap-[1px] max-w-[600px]">
         <button class="p-2 bg-white text-red-500 w-16 border border-gray-300" type="submit">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -112,6 +112,43 @@
       <a href="#" class="text-right">
         <img src="./imgs/logo.svg" alt="logo">
       </a>
+    </div>
+    <div class="container block sm:hidden mt-3">
+      <form class="flex-1 flex items-center justify-center gap-[1px] w-full">
+        <button class="p-2 bg-white text-red-500 w-16 border border-gray-300" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="text" class="text-right w-full outline-none border border-gray-300 bg-white p-2" placeholder="ابحث عن منتج">
+        <div>
+          <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="text-black gap-2 font-bold text-md p-2 w-20 text-center flex justify-center items-center border border-slate-300" type="button">
+            <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+            الفئة
+          </button>
+            
+          <!-- Dropdown menu -->
+          <div id="dropdownInformation" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <div class="px-4 py-3 text-md text-gray-900 dark:text-white font-bold text-right">
+                الفئة
+              </div>
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-right">المعجنات</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-right">المعجنات</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-right">المعجنات</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-right">المعجنات</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </form>
     </div>
     <nav class="container bg-orange-600 p-3 rounded-2xl absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 border-8 border-white">
       <div class="flex justify-center flex-wrap">
