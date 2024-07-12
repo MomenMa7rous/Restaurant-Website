@@ -1,7 +1,3 @@
-window.onload = () => {
-  initFlowbite();
-}
-
 // Owl Carousel jQuery Initialization
 $(document).ready(function(){
   $(".owl-carousel.hero").owlCarousel({
